@@ -8,14 +8,14 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f6f6f6;
+            background-color: #ffc0cb; /* Pink background color */
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #ffc0cb;
+            background-color: #ffffff;
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
@@ -53,20 +53,44 @@
         }
         
         .birthday-wishes {
-            background-color:#ffc0cb ;
+            background-color: #ffffff;
             padding: 20px;
             border: 1px solid #ddd;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         
         .birthday-wishes h2 {
             color: #3498db;
         }
         
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #888;
+        .moving-heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #e74c3c;
+            animation: heartMove 2s infinite;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .heart-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        @keyframes heartMove {
+            0%, 100% {
+                transform: translate(-50%, -50%);
+            }
+            50% {
+                transform: translate(-55%, -45%);
+            }
         }
     </style>
     <title>Happy Birthday!</title>
@@ -87,8 +111,14 @@
             
             <section class="birthday-wishes">
                 <h2>Warm Wishes</h2>
-                <p>May this year bring you success, happiness, and all the things you desire.</p>
+                <div id="heart-content" class="hidden">
+                    <img src="heart_image.png" alt="Heart Image" class="heart-image">
+                    <p>May this year bring you success, happiness, and all the things you desire.</p>
+                </div>
             </section>
+
+            <!-- Add other sections for friend's wishes, your wishes, about her, and the black-green heart symbol -->
+
         </main>
         
         <footer>
@@ -97,3 +127,4 @@
     </div>
 </body>
 </html>
+
