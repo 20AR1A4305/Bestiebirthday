@@ -8,16 +8,17 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #ffc0cb; /* Pink background color */
+            background-color: black; /* Black background color */
+            color: white;
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #000000AA; /* Semi-transparent black */
+            border: 1px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             position: relative;
         }
 
@@ -92,6 +93,12 @@
                 transform: translate(-55%, -45%);
             }
         }
+        
+        .black-red-heart {
+            color: black;
+            font-size: 48px;
+            animation: heartMove 2s infinite;
+        }
     </style>
     <title>Happy Birthday!</title>
 </head>
@@ -117,8 +124,25 @@
                 </div>
             </section>
 
-            <!-- Add other sections for friend's wishes, your wishes, about her, and the black-green heart symbol -->
+            <!-- Add other sections for friend's wishes, your wishes, about her, and the black-red heart symbol -->
+            <section class="birthday-wishes">
+                <h2>Friend's Birthday Wishes</h2>
+                <p>Happy Birthday, bestie! Wishing you endless joy and amazing adventures on your special day.</p>
+            </section>
 
+            <section class="birthday-wishes">
+                <h2>Your Birthday Wishes</h2>
+                <p>Write your heartwarming birthday wishes here.</p>
+            </section>
+
+            <section class="birthday-wishes">
+                <h2>About Her</h2>
+                <p>Express your feelings and thoughts about her here.</p>
+            </section>
+            
+            <section class="birthday-wishes">
+                <h2>Heart Symbol <span class="black-red-heart">&#10084;</span></h2>
+            </section>
         </main>
         
         <footer>
@@ -127,4 +151,3 @@
     </div>
 </body>
 </html>
-
