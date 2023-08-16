@@ -42,7 +42,7 @@
         }
         
         .birthday-card {
-            background-color:#FFC0CB ;
+            background-color: #FFC0CB ;
             padding: 20px;
             border: 1px solid #ddd;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -99,6 +99,13 @@
             font-size: 48px;
             animation: heartMove 2s infinite;
         }
+
+        /* Adding style to the paragraphs */
+        p {
+            color: darkgray; /* Changing the text color */
+            font-family: "Courier New", monospace; /* Changing the font style */
+            font-size: 18px; /* Changing the font size */
+        }
     </style>
     <title>Happy Birthday</title>
 </head>
@@ -140,6 +147,24 @@
                 <p>Express your feelings and thoughts about her here.</p>
             </section>
             
+            <!-- Video Montage -->
+            <section class="birthday-wishes">
+                <h2>Video Montage</h2>
+                <video width="640" height="360" controls>
+                    <source src="video_filename.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            
+            <!-- Another Video -->
+            <section class="birthday-wishes">
+                <h2>Another Video</h2>
+                <video width="640" height="360" controls>
+                    <source src="another_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            
             <section class="birthday-wishes">
                 <h2>Heart Symbol <span class="black-red-heart">&#10084;</span></h2>
             </section>
@@ -151,69 +176,3 @@
     </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(45deg, #ff3366, #ffcc33);
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-
-        .heart {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            clip-path: polygon(
-                50% 0%,
-                100% 50%,
-                50% 100%,
-                0% 50%
-            );
-            animation: heartBeat 1.5s infinite;
-        }
-
-        @keyframes heartBeat {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-
-        .wishes {
-            text-align: center;
-            padding-top: 10%;
-        }
-
-        h2 {
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        p {
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-    <title>Birthday Wishes</title>
-</head>
-<body>
-    <div class="heart"></div>
-    <div class="wishes">
-        <h2>Happy Birthday, [Name]!</h2>
-        <p>May your day be filled with joy and laughter.</p>
-    </div>
-</body>
-</html>
-
